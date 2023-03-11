@@ -1,8 +1,8 @@
-<div id="<%= dom_id comment %>">
+<div id="<%= dom_id comment %>" class="comment">
   <div>
     <p>
       <%= comment.body %>
     </p>
-    <span>por<%= comment.name %> - <%= comment.created_at %></span>
+    <span><%= comment.name %> - <%= comment.created_at.strftime("%B %d %Y") %></span>
   </div>
 </div>

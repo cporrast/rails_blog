@@ -35,3 +35,18 @@ a:visited {
   background-color: lightblue;
   padding: 15px 25px;
 }
+
+.comments-section {
+  margin-top: 150px;
+  margin-bottom: 75px;
+}
+.comments-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.comment {
+  padding: 25px 5px;  
+  margin-left: 25px;
+  background-color:aliceblue;
+  margin-top: 10px;
+}
