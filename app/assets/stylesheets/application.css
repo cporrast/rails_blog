@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+html {
+  font-family: sans-serif;
+}
+
+body {
+  max-width: 90%;
+  margin: auto;
+}
+
+a {
+  color: blue;
+}
+a:visited {
+  color: blue;
+}
+
+.post {
+  margin-bottom: 25px;
+  width: fit-content;
+  background-color: lightblue;
+  padding: 15px 25px;
+}
