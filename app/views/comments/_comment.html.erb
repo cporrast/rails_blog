@@ -3,6 +3,6 @@
     <p>
       <%= comment.body %>
     </p>
-    <span><%= comment.name %> - <%= comment.created_at.strftime("%B %d %Y") %></span>
+    <span><%= comment.name %> - <%= date_day_month_year(comment.created_at)%></span>
   </div>
 </div>

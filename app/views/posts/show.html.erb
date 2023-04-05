@@ -11,7 +11,8 @@
   
   <%= render partial: "comments/form" %>
 
-  <%= render @post.comments.order(created_at: :desc) %>
+  <%# render @post.comments.order(created_at: :desc) %>
+  <%= render @post.comments %>
 
 </div>
 

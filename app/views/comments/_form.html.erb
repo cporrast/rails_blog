@@ -1,12 +1,12 @@
 <form action="<%=post_comments_path(@post) %>" method="post">
   <input type="hidden" name="authenticity_token">
   <div>
-    <label style="display: block" for="comment_name">Title</label>
+    <label style="display: block" for="comment_name"><%= t('comments.name') %></label>
     <input type="text" name="comment[name]" id="comment_name">
   </div>
 
   <div>
-    <label style="display: block" for="comment_body">Body</label>
+    <label style="display: block" for="comment_body"><%= t('comments.body') %></label>
     <textarea name="comment[body]" id="comment_body"></textarea>
   </div>
 
