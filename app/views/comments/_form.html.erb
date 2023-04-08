@@ -1,18 +1,15 @@
-<form action="<%=post_comments_path(@post) %>" method="post">
-  <input type="hidden" name="authenticity_token">
+<%= form_with url: post_comments_path(@post), method: :post do |form|%>
   <div>
-    <label style="display: block" for="comment_name"><%= t('comments.name') %></label>
-    <input type="text" name="comment[name]" id="comment_name">
+    <%= form.label :name, "Comment Title"%>
+    <%= form.text_field :name, name: "comment[name]" %>
   </div>
 
   <div>
-    <label style="display: block" for="comment_body"><%= t('comments.body') %></label>
-    <textarea name="comment[body]" id="comment_body"></textarea>
+    <%= form.label :body, "Comment Body"%>
+    <%= form.text_area :body, name: "comment[body]" %>
   </div>
 
   <div>
-    <input type="submit"value="Submit">
+    <%= form.submit "Submit" %>
   </div>
-</form>
-
-
+<%end %>
