@@ -31,3 +31,9 @@
 
 en:
   hello: "Hello world"
+  posts:
+    title: "Post title"
+    body: "Content"
+  comments:
+    name: "Comment title"
+    body: "Comment"

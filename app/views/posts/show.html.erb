@@ -1,6 +1,21 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @post %>
+<h1><%= @post.title %></h1>
+
+<p>
+<%= @post.body%>
+</p>
+
+<div class="comments-section">
+  <h2>Comments:</h2>
+  
+  <%= render partial: "comments/form" %>
+
+  <%# render @post.comments.order(created_at: :desc) %>
+  <%= render @post.comments %>
+
+</div>
+
 
 <div>
   <%= link_to "Edit this post", edit_post_path(@post) %> |
